@@ -1,0 +1,37 @@
+
+3. Which of the following statements will potentially execute? And give values for A, B and C that will make the statement execute:
+
+    5.1. if (A is true AND B is true) OR (A is false AND B is true) THEN color="blue"
+    
+          A   B   RESULT
+          T   T    blue
+          F   T    blue
+          T   F    
+          F   F   
+    
+    
+    5.2. if (A is true AND B is false) OR (A is NOT true AND A is false) THEN color="green"
+    
+          A   B   RESULT
+          T   T    
+          F   T   green
+          T   F   green
+          F   F   green
+          
+          
+    5.3. if (A is true AND B is false OR A is false) OR (A is either true or false) THEN color="yellow"
+    
+          A   B   RESULT
+          T   T   yellow
+          F   T   yellow
+          T   F   yellow
+          F   F   yellow
+        
+          
+    5.4. if (false AND true) OR (false OR true) THEN color="white"
+    
+          A   B   RESULT
+          T   T   white
+          F   T   white
+          T   F   white
+          F   F   white

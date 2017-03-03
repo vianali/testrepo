@@ -1,0 +1,20 @@
+
+5. Read the following program:
+
+variable i = 0
+WHILE i is less than 5 EXECUTE THESE LINES
+    PRINT i
+    increment i by 1
+    GO TO WHILE ABOVE
+END OF WHILE
+
+Answer the following questions:
+
+    5.1. How many times are the lines inside the WHILE loop executed?
+    
+         Answer: 5
+         
+    5.2. What is the final value of i?
+    
+         Answer: i=5
+    

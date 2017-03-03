@@ -1,0 +1,24 @@
+
+6. Read the following program:
+
+ variable x = 0
+ variable y = 10
+ variable i = 0
+ variable holder = 0
+ 
+ WHILE i does not have the same value as y EXECUTE THESE LINES
+    if (i divides 2 without a remainder) THEN holder = existing value of holder + i 
+    increment i by 1
+    GO TO WHILE ABOVE
+ END OF WHILE
+ 
+ Answer the following:
+  
+    5.1. What is the final value of "holder" when the program is done running?
+    
+         Answer: holder=20
+    
+    
+    5.2. What is the final value of "i" when the program is done running?
+        
+         Answer: i=8
