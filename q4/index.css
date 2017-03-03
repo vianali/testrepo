@@ -1,0 +1,55 @@
+table, td, th {
+    border: 1px solid black;
+}
+table {
+    border-collapse: collapse;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li .active {
+    border-style: solid;
+    font-weight: bold
+}
+
+li {
+    display: inline;
+    
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+body .color {
+    color: red;
+}
+p {
+    font-style: italic;
+}
+
+h2, p {
+    display: inline;
+}
+
+ul{
+  padding:0;
+}
+
+li[data-type="orange"]{
+    background-image: url(https://www.google.iq/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwis3LLPirvSAhWBjywKHZVBABcQjRwIBw&url=http%3A%2F%2Fwww.psdgraphics.com%2Fpsd-icons%2Ffruit-illustrations-lemon-and-orange-icons%2F&bvm=bv.148747831,d.bGg&psig=AFQjCNGqDiZ-OB-vTM6LCwga-I_8pGnCtw&ust=1488656189559090)
+}
