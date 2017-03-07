@@ -46,10 +46,5 @@ h2, p {
     display: inline;
 }
 
-ul{
-  padding:0;
-}
 
-li[data-type="orange"]{
-    background-image: url(http://www.psdgraphics.com/file/orange-slice-background.jpg)
-}
+
