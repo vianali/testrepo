@@ -1,0 +1,51 @@
+<html>
+<body>
+
+<p>Click the button to display a time-based greeting:</p>
+
+<p id="demo"></p>
+
+<script>
+var A=4;
+var B=6;
+var C=-7;
+var D=8;
+var E=9;
+
+    if (A % 2 ==0) {
+    document.getElementById("demo").innerHTML = "BLUE";
+    } 
+    
+    
+    else if (B%2==0 && C>5){
+    document.getElementById("demo").innerHTML = "GREEN";
+    }
+    
+    
+       else if (B%2==0 || C<5){
+    document.getElementById("demo").innerHTML = "YELLOW";
+    }
+    
+    
+        else if (E%2==1){
+    document.getElementById("demo").innerHTML = "YELLOW";
+    }
+    
+    
+      else if (A%2==0 && B%2==0 || C==-7){
+    document.getElementById("demo").innerHTML = "ORANGE";
+    }
+    
+    
+   else if (A+B+C > A+C){
+    document.getElementById("demo").innerHTML = "PURPLE";
+    }
+    
+    
+    else{
+    
+    }
+</script>
+
+</body>
+</html>

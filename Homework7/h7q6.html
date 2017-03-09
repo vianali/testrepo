@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Loops</h1>
+
+<p id="demo"></p>
+<button onclick="myFunction()">Try it</button>
+<script>
+var a=[17, 24, 4, 26, 19, 30, 2, 66, 40];
+var i;
+var oddlist=[];
+var evenlist=[];
+
+function isOdd(X) {
+        if (X%2==1){
+        return true;
+        }
+        else {
+        return false;
+        }
+        }
+
+for (i = 0; i < a.length; i++) {
+if (a[i]%2==1){
+oddlist.push(a[i]);   
+}
+
+else {
+evenlist.push(a[i]); 
+}
+}
+document.getElementById("demo").innerHTML =(evenlist);
+
+
+function myFunction() {
+    evenlist.sort(function(a, b){return b - a});
+    document.getElementById("demo").innerHTML = evenlist;
+}
+function myFunction() {
+    evenlist.sort(function(a, b){return a- b});
+    document.getElementById("demo").innerHTML = evenlist;
+}
+
+
+document.getElementById("demo").innerHTML =(oddlist);
+
+
+function myFunction() {
+    oddlist.sort(function(a, b){return b - a});
+    document.getElementById("demo").innerHTML = oddlist;
+}
+function myFunction() {
+    oddlist.sort(function(a, b){return a- b});
+    document.getElementById("demo").innerHTML = oddlist;
+}
+
+
+</script>
+</body>
+</html>
