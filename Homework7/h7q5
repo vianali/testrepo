@@ -1,0 +1,41 @@
+var a=[17, 24, 4, 26, 19, 30, 2, 66, 40];
+var oddlist=[];
+var evenlist=[];
+var minodd=null;
+var mineven=a[0];
+
+for (i=0; i<a.length; i++){
+  if (isodd(a[i])){
+    oddlist.push(a[i]);
+    if (minodd===null){
+  minodd=a[i];
+    }
+  else if (a[i]<minodd){
+  minodd=a[i];
+  }
+}  
+
+else{
+  evenlist.push(a[i]);
+     if (mineven===null){
+  mineven=a[i];
+    }
+  else if (a[i]<mineven){
+  mineven=a[i];
+  }
+}
+}  
+console.log("the odd list is="+ oddlist);
+console.log("the minimum odd number is="+minodd);
+console.log("the even list is="+evenlist);
+console.log("the minimum even number is="+mineven);
+
+function isodd(x){
+  if(x%2!==0){
+    return true;
+  }
+  else{ 
+  return false;
+}
+}
+
