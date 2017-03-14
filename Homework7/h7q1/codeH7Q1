@@ -1,0 +1,6 @@
+var a=[17, 24, 4, 26, 19, 30, 2, 66, 40];
+
+for (i=0; i<a.length; i++){
+  if(a[i]%2!==0)
+  console.log(a[i]);
+}
