@@ -1,0 +1,75 @@
+var a=[1,4,6];
+var b=[2,3,5];
+ 
+ var a=[17, 24, 4, 26, 19, 30, 2, 66, 40];
+var oddlist=[];
+var evenlist=[];
+var gen=[];
+var minodd=null;
+var mineven=null;
+{
+for (i=0; i<a.length; i++){  
+if (isodd(a[i])){
+    oddlist.push(a[i]);
+   if (minodd===null){
+  minodd=a[i];
+    }  
+else if (a[i]<minodd){
+  minodd=a[i];
+ }
+ }  
+else{
+evenlist.push(a[i]);
+    if (mineven===null){
+ mineven=a[i];    
+}  
+else if (a[i]<mineven){
+ mineven=a[i];  
+}
+}
+}
+
+console.log("the odd list is="+ oddlist);
+console.log("the minimum odd number is="+minodd);
+console.log("the even list is="+evenlist);
+console.log("the minimum even number is="+mineven);
+sort(evenlist);
+sort(oddlist);
+revers(evenlist);
+revers(oddlist);
+
+function isodd(x){  
+if(x%2!==0){    
+return true;
+}  
+else{   return false;
+  
+}
+}
+
+function sort(gen){  
+for (i=0;i<gen.length-1; i++){
+  for (j=i+1; j<gen.length; j++){  
+  if (gen[i]<gen[j]){
+   temp=gen[i];
+    gen[i]=gen[j];
+   gen[j]=temp;
+   } }}
+   console.log("sorted list:");  
+for (i=0; i<gen.length; i++)  
+console.log(gen[i]); 
+  
+}}
+ 
+ function revers(gen){  
+for (i=0;i<gen.length-1; i++){
+  for (j=i+1; j<gen.length; j++){   
+  if (gen[i]>gen[j]){
+   temp=gen[i];
+    gen[i]=gen[j];
+   gen[j]=temp;
+   } }}
+   console.log("revers list:");  
+for (i=0; i<gen.length; i++)  
+console.log(gen[i]); 
+  }
