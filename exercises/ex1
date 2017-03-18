@@ -4,7 +4,7 @@ var a=[1,4,6];
 var b=[2,3,5];
 
 
-merges(d,b);
+merges(a,b);
 
 function merges(x,y){
   var temp;
