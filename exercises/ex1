@@ -1,0 +1,26 @@
+//Write a function that merges two sorted lists into a new sorted list. [1,4,6],[2,3,5] → [1,2,3,4,5,6]. You can do this quicker than concatenating them followed by a sort.
+
+var a=[1,4,6];
+var b=[2,3,5];
+
+
+merges(d,b);
+
+function merges(x,y){
+  var temp;
+  var vian=[];
+ for (i=0; i<y.length; i++){
+vian.push(y[i]);
+}
+for (i=0; i<x.length; i++){
+  vian.push(x[i]);
+for (j=i+1; j<vian.length; j++){
+  if(vian[i]>vian[j]){
+    temp=vian[i];
+    vian[i]=vian[j];
+    vian[j]=temp;
+  }
+}
+}
+return(vian);  
+}
