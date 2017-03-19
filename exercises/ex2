@@ -6,4 +6,4 @@ var total=0;
 for (i=0; i<b.length; i++){
   total=total+b[i];
   }
-  console.log("the sum of array is:"+total);
+  console.log("the total of array is:"+total);

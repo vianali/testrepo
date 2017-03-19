@@ -1,0 +1,17 @@
+//Write a function that combines two lists by alternatively taking elements, e.g. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
+
+var d=["a","b","c"];
+var b=[1,2,3];
+
+merge(d,b);
+
+
+
+function merge (x,y){
+  var c=[];
+for (i=0; i<x.length; i++){
+  c.push(x[i]);
+  c.push(y[i]);
+}
+console.log(c);
+}
