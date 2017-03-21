@@ -1,0 +1,25 @@
+//Write a function that takes a list of strings and prints them, one per line,in a rectangular frame. For example the list ["Hello", "World", "in", "a", "frame"] gets printed as:
+*********
+* Hello *
+* World *
+* in    *
+* a     *
+* frame *
+*********
+
+Solution\
+
+var z=["Hello", "World", "in", "a", "frame"];
+
+print(z);
+
+function print(x){
+   console.log("********");
+  for (i=0; i<x.length; i++ ){
+    console.log("*" +  x[i]  + "*");
+  }
+  console.log("********");
+}
+
+
+
