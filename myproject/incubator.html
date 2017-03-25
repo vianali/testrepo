@@ -17,9 +17,34 @@
              <li><a  href="https://test-vianali.c9users.io/myproject/Calculator.html">Calculator</a></li>
           </ul>
         </nav>
-        <img src="https://scontent.fbgt1-2.fna.fbcdn.net/v/t1.0-9/14523041_689086281244211_3207644426714741610_n.jpg?oh=f86556769c71ab00869114ab2d135e5b&oe=595FA6E0"></img>
-        <img src="https://scontent.fbgt1-2.fna.fbcdn.net/v/t1.0-9/14581324_689088204577352_3994803177082905824_n.jpg?oh=e5ca0c1f68a5a901d02f9660cba82416&oe=595E0527"></img>
-        <img src="https://scontent.fbgt1-2.fna.fbcdn.net/v/t1.0-9/14570386_689093611243478_3342690387439304737_n.jpg?oh=80f6560d1ec09593c4ca65d35a5b9753&oe=596DED61"></img>
+        
+        <br> <br>
+        
+        <section>
+        <img class="mySlides" src="https://scontent.fbgt1-2.fna.fbcdn.net/v/t1.0-9/14523041_689086281244211_3207644426714741610_n.jpg?oh=f86556769c71ab00869114ab2d135e5b&oe=595FA6E0" style="width:1200px;height:400px;"></img>
+        <img class="mySlides" src="https://scontent.fbgt1-2.fna.fbcdn.net/v/t1.0-9/14581324_689088204577352_3994803177082905824_n.jpg?oh=e5ca0c1f68a5a901d02f9660cba82416&oe=595E0527" style="width:1200px;height:400px;"></img>
+        <img class="mySlides" src="https://scontent.fbgt1-2.fna.fbcdn.net/v/t1.0-9/14570386_689093611243478_3342690387439304737_n.jpg?oh=80f6560d1ec09593c4ca65d35a5b9753&oe=596DED61" style="width:1200px;height:400px;"></img>
+        <img class="mySlides" src="https://scontent.fbgt1-2.fna.fbcdn.net/v/t1.0-9/14568145_689084197911086_3991999572879400800_n.jpg?oh=e58fccf7192363d9a55963445ed17637&oe=5953BCDF" style="width:1200px;height:400px;"></img>
+        </section>
+        
+        <script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+        
         
         <br> <br> <br> <br>
         
@@ -84,6 +109,27 @@
 <li> Aramex—Fadi Ghandour </li> 
 </ul>
 </p>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
 
         
         <footer> <p> Posted by :Vian Ali</p>
