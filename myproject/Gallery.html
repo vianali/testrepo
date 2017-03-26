@@ -3,6 +3,9 @@
         <head>
             <link rel="stylesheet" href="incubator.css" />
             </head>
+            
+            <br><br><br>
+            
              <nav>
                <ul>
              <li><a  href="https://test-vianali.c9users.io/myproject/incubator.html" >Home</a></li> &nbsp
@@ -11,8 +14,12 @@
              <li><a  href="https://test-vianali.c9users.io/myproject/Calculator.html">Calculator</a></li>
                </ul>
              </nav>
+             <br><br><br>
             
-            
+<h2>Photo Slideshow</h2>
+<p>below some of workshop photoes of our incubator</p>
+
+
 <div class="slideshow-container">
 <div class="mySlides fade">
   <div class="numbertext">1 / 4</div>
@@ -38,8 +45,8 @@
   <div class="text">Caption Four</div>
 </div>
 
-<a class="prev" previous="plusSlides(-1)">&#10094;</a>
-<a class="next" next="plusSlides(1)">&#10095;</a>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 </div>
 <br>
@@ -48,10 +55,65 @@
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+<br>
+
+
+
+
+
+
+<h2>Video Slideshow</h2>
+<p>below some of videoes that explain more about incubator</p>
+
+  <div class="slideshow-container2">
+<div class="mySlides fade2">
+  <div class="numbertext2">1 / 4</div>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/dCpAioBjG18?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen style="width:100%"></iframe>
+  <div class="text2">Caption One</div>
 </div>
 
-            
-            
+<div class="mySlides fade2">
+  <div class="numbertext2">2 / 4</div>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/XkIY7hxo9Wc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen style="width:100%"></iframe>
+  <div class="text2">Caption Two</div>
+</div>
+
+<div class="mySlides fade2">
+  <div class="numbertext2">3 / 4</div>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/kJyVChnKCzU?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen style="width:100%"></iframe>
+  <div class="text2">Caption Three</div>
+</div>
+
+<div class="mySlides fade2">
+  <div class="numbertext2">4 / 4</div>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/UD_vV9mC9IM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen style="width:100%"></iframe>
+  <div class="text2">Caption Four</div>
+</div>
+
+<a class="prev2" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next2" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot2" onclick="currentSlide(1)"></span> 
+  <span class="dot2" onclick="currentSlide(2)"></span> 
+  <span class="dot2" onclick="currentSlide(3)"></span> 
+  <span class="dot2" onclick="currentSlide(4)"></span>
+</div>          
+
+
+
+
+
+
+
+
+
+           
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -82,5 +144,38 @@ function showSlides(n) {
 </script>
             
             
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+
+
+</script>
             </body>
             </html>
