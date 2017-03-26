@@ -1,0 +1,69 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li .active {
+    border-style: solid;
+    font-weight: bold
+}
+
+li {
+    display: inline;
+    
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+#TT1 { 
+    border: 4px solid red
+}
+.like1 {
+    border: 2px solid green
+}
+
+#TT2 { 
+    border: 4px solid blue
+}
+.like2 {
+    border: 2px solid yellow
+}
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+
+
+
