@@ -4,6 +4,7 @@
         <head>
             <link rel="stylesheet" href="incubator.css" />
         </head>
+        <br><br>
         <nav>
           <ul>
              <li><a  href="https://test-vianali.c9users.io/myproject/incubator.html" >Home</a></li> &nbsp
@@ -18,21 +19,25 @@
 <div class="container">
   <form action="/action_page.php">
     <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+    <input type="text" id="fname" placeholder="Your first name.." name="firstname" required>
 
     <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <input type="text" id="lname" placeholder="Your last name.." name="lastname" required>
      
       <label for="Email">Email</label>
       <input type="text" placeholder="Enter Your Email" name="email" required>
 
-<label for="Gender">Gender</label>
-    <input type="text" id="Gender" name="Gender" placeholder="Your Gender..">
-    
-Gender: male <input type="checkbox" id="myCheck"> 
-Female <input type="checkbox" id="myCheck">
+<label for="Gender">Gender: </label><br><br>
+<form action="/action_page.php">
+  <label for="male">Male</label>
+  <input type="radio" name="gender" id="male" value="male"><br>
+  <label for="female">Female</label>
+  <input type="radio" name="gender" id="female" value="female"><br>
+  <label for="other">Other</label>
+  <input type="radio" name="gender" id="other" value="other"><br><br>
+</form>
 
-    <br><br>
+    <br>
     
         <label for="country">Country</label>
     <select id="country" name="country">
@@ -66,6 +71,26 @@ Female <input type="checkbox" id="myCheck">
      <a href="#" class="fa fa-skype"></a>
      <a href="#" class="fa fa-yahoo"></a> 
      
+     
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
 
 
      
