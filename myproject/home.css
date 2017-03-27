@@ -1,4 +1,4 @@
-ul {
+ul .a{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -11,8 +11,12 @@ li .active {
 
 li {
     display: inline;
-    
 }
+
+li .list1 {
+    display: inline;
+}
+
 a:link {
     text-decoration: none;
 }
@@ -63,7 +67,12 @@ a:active {
   background-color: #555;
 }
 
+.a{
+    display: list-item;
+}
 
-
+.list1{
+    display: list-item;
+}
 
 
