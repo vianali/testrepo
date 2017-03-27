@@ -27,8 +27,25 @@
       <label for="Email">Email</label>
       <input type="text" placeholder="Enter Your Email" name="email" required>
         
-       <label for="Mobile Number">Mobile Number</label>
-      <input type="number" placeholder="Enter Your Mobile Number" name="mobile number" required>
+        <br>
+       <label for="Mobile Number">Mobile Number<p> (the number should be 11 degree)</p></label>
+      <input type="number" min="99999999999" placeholder="Enter Your Mobile Number" name="mobile number" required>
+     
+      <button onclick="myFunction()">OK</button>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var txt = "";
+    if (document.getElementById("id1").validity.rangeUnderflow) {
+        txt = "Value too small";
+    } else {
+        txt = "Input OK";
+    } 
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
       <br><br>
       
       <label for="University">University</label>
@@ -66,8 +83,8 @@
   </form>
 </div>
       
-   <p><strong>To Start Entrepreneur test click START</strong></p>     
-        
+   <p><strong>To Start Entrepreneur Test Click START</strong></p>     
+        <a href="https://www.facebook.com/%D8%AD%D8%A7%D8%B6%D9%86%D8%A9-%D8%B9%D8%B1%D8%A7%D9%82-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84-689072877912218/" class="button">START</a>
         
         
         

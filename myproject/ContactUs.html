@@ -61,6 +61,22 @@
       <option value="55-65">55-65</option>
     </select>
     
+    <form name="myForm" action="/action_page_post.php"
+onsubmit="return validateForm()" method="post">
+Comment: <input type="text" name="comment">
+<input type="submit" value="Check ">
+
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["comment"].value;
+    if (x == "") {
+        alert("comment must be filled ");
+        return false;
+    }
+}
+</script>
+</form>
+    <br><br>
     <input type="submit" value="Submit">
     <input type="reset"  value="Reset">
   </form>
@@ -72,10 +88,10 @@
     <br> <br><br>
     <h4>Contact Us on our Social Media accounts</h4>
      <!-- Add font awesome icons -->
-     <a href="#" class="fa fa-facebook"></a>
-     <a href="#" class="fa fa-linkedin"></a>
-     <a href="#" class="fa fa-skype"></a>
-     <a href="#" class="fa fa-yahoo"></a> 
+     <a href="https://www.facebook.com/%D8%AD%D8%A7%D8%B6%D9%86%D8%A9-%D8%B9%D8%B1%D8%A7%D9%82-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84-689072877912218/" class="fa fa-facebook"></a>
+     <a href="https://www.linkedin.com/groups/10318903" class="fa fa-linkedin"></a>
+     <a href="https://web.skype.com/" class="fa fa-skype"></a>
+     <a href="https://maktoob.yahoo.com/?p=us" class="fa fa-yahoo"></a> 
      
      
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
