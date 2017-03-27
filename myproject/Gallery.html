@@ -4,13 +4,16 @@
             <link rel="stylesheet" href="home.css" />
             <link rel="stylesheet" href="gallery.css" />
             </head>
+            <h1>Iraq Future Incubator</h1>
+        <p>The first incubator in Iraq creating by RITS company and Al-mansour University college</p>
+        <hr>
             
-            <br><br><br>
+            <br>
             
              <nav>
                <ul>
              <li><a  href="https://test-vianali.c9users.io/myproject/Homeincubator.html" >Home</a></li> &nbsp
-             <li><a  class="active"href="Gallery">Gallery</a></li>  &nbsp
+             <li><a  class="active" href="Gallery">Gallery</a></li>  &nbsp
              <li><a  href=" https://test-vianali.c9users.io/myproject/ContactUs.html">Contact Us</a></li>  &nbsp
              <li><a  href="https://test-vianali.c9users.io/myproject/Calculator.html">Calculator</a></li>  &nbsp
              <li><a  href="https://test-vianali.c9users.io/myproject/registration.html">Registration</a></li>
@@ -23,43 +26,113 @@
 
 
 <div class="slideshow-container">
+
+
 <div class="mySlides fade">
-  <div class="numbertext">1 / 4</div>
+ <div class="numbertext">1 / 4</div>
   <img src="https://scontent.fbgt1-2.fna.fbcdn.net/v/t1.0-9/14725729_697207247098781_2921143905828759162_n.jpg?oh=e08b18110b1b74a56632124e8a02d749&oe=596FB631" style="width:100%">
-  <div class="text">Caption One</div>
+ <div class="text">Caption One</div>
 </div>
+
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 4</div>
   <img src="https://scontent.fbgt1-2.fna.fbcdn.net/v/t1.0-9/16427689_763686557117516_6810733242839742812_n.jpg?oh=b4fc150a7131c0ffaf2d22ac32f56405&oe=5971AB0A" style="width:100%">
-  <div class="text">Caption Two</div>
+ <div class="text">Caption Two</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 4</div>
   <img src="https://scontent.fbgt1-2.fna.fbcdn.net/v/t1.0-9/16473024_763686553784183_5614963026230964738_n.jpg?oh=5debdb500cdc1fda4494b35ceaa6ad5d&oe=596B9F4D" style="width:100%">
-  <div class="text">Caption Three</div>
+ <div class="text">Caption Three</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">4 / 4</div>
   <img src="https://scontent.fbgt1-2.fna.fbcdn.net/v/t1.0-9/16640695_763686560450849_5598278622685514374_n.jpg?oh=312a756dd158dd6fba3e5fb23f3071df&oe=594FA6F8" style="width:100%">
-  <div class="text">Caption Four</div>
-</div>
+ <div class="text">Caption Four</div>
+ </div>
+
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
 
 </div>
 <br>
 
 <div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
+ 
+ <span class="dot" onclick="currentSlide(1)"></span> 
+ 
+ <span class="dot" onclick="currentSlide(2)"></span> 
+ 
+ <span class="dot" onclick="currentSlide(3)"></span> 
+
   <span class="dot" onclick="currentSlide(4)"></span>
+
 </div>
 <br>
+
+
+    
+<script>
+
+var slideIndex1 = 1;
+
+showSlides(slideIndex1);
+
+
+function plusSlides(n) {
+  showSlides(slideIndex1 += n);
+
+}
+
+
+function currentSlide(n) {
+  showSlides(slideIndex1 = n);
+
+}
+
+
+function showSlides(n) {
+  
+var i;
+
+  var slides = document.getElementsByClassName("mySlides");
+
+  var dots = document.getElementsByClassName("dot");
+
+  if (n > slides.length) {slideIndex1 = 1}    
+  
+if (n < 1) {slideIndex1 = slides.length}
+  
+for (i = 0; i < slides.length; i++) {
+     
+ slides[i].style.display = "none";  
+  
+}
+
+  for (i = 0; i < dots.length; i++) {
+
+      dots[i].className = dots[i].className.replace(" active", "");
+
+  }
+
+  slides[slideIndex1-1].style.display = "block";
+  
+  dots[slideIndex1-1].className += " active";
+
+}
+
+</script>
+
+
+
+
+
+
 
 
 
@@ -70,114 +143,74 @@
 <p>below some of videoes that explain more about incubator</p>
 
   <div class="slideshow-container2">
-<div class="mySlides fade2">
+<div class="mySlides2 fade2">
   <div class="numbertext2">1 / 4</div>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/dCpAioBjG18?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen style="width:100%"></iframe>
   <div class="text2">Caption One</div>
 </div>
 
-<div class="mySlides fade2">
+<div class="mySlides2 fade2">
   <div class="numbertext2">2 / 4</div>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/XkIY7hxo9Wc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen style="width:100%"></iframe>
   <div class="text2">Caption Two</div>
 </div>
 
-<div class="mySlides fade2">
+<div class="mySlides2 fade2">
   <div class="numbertext2">3 / 4</div>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/kJyVChnKCzU?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen style="width:100%"></iframe>
   <div class="text2">Caption Three</div>
 </div>
 
-<div class="mySlides fade2">
+<div class="mySlides2 fade2">
   <div class="numbertext2">4 / 4</div>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/UD_vV9mC9IM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen style="width:100%"></iframe>
   <div class="text2">Caption Four</div>
 </div>
 
-<a class="prev2" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next2" onclick="plusSlides(1)">&#10095;</a>
+<a class="prev2" onclick="plusSlides2(-1)">&#10094;</a>
+<a class="next2" onclick="plusSlides2(1)">&#10095;</a>
 
 </div>
 <br>
 
 <div style="text-align:center">
-  <span class="dot2" onclick="currentSlide(1)"></span> 
-  <span class="dot2" onclick="currentSlide(2)"></span> 
-  <span class="dot2" onclick="currentSlide(3)"></span> 
-  <span class="dot2" onclick="currentSlide(4)"></span>
+  <span class="dot2" onclick="currentSlide2(1)"></span> 
+  <span class="dot2" onclick="currentSlide2(2)"></span> 
+  <span class="dot2" onclick="currentSlide2(3)"></span> 
+  <span class="dot2" onclick="currentSlide2(4)"></span>
 </div>          
-
-
-
-
-
-
-
 
 
            
 <script>
-var slideIndex = 1;
-showSlides(slideIndex);
+var slideIndex2 = 1;
+showSlides(slideIndex2);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides2(n) {
+  showSlides(slideIndex2 += n);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentSlide2(n) {
+  showSlides(slideIndex2 = n);
 }
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
+  var slides = document.getElementsByClassName("mySlides2");
+  var dots = document.getElementsByClassName("dot2");
+  if (n > slides.length) {slideIndex2 = 1}    
+  if (n < 1) {slideIndex2 = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+  slides[slideIndex2-1].style.display = "block";  
+  dots[slideIndex2-1].className += " active";
 }
 </script>
             
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-<script>
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-
-
-
-</script>
             </body>
             </html>
