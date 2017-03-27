@@ -18,5 +18,78 @@
              <li><a class="active" href="Registration" >Registration</a></li>
           </ul>
         </nav>
+        <h3>Registration of Incubator</h3>
+        <div class="container">
+  <form action="/action_page.php">
+    <label for="name"> Name</label>
+    <input type="text" id="name" placeholder="Your name.." name="name" required>
+     
+      <label for="Email">Email</label>
+      <input type="text" placeholder="Enter Your Email" name="email" required>
+        
+       <label for="Mobile Number">Mobile Number</label>
+      <input type="number" placeholder="Enter Your Mobile Number" name="mobile number" required>
+      <br><br>
+      
+      <label for="University">University</label>
+      <input type="text" placeholder="Enter Your University" name="university" required>
+        
+        <label for="Department">Department</label>
+      <input type="text" placeholder="Enter Your Department" name="department" required>
+      
+      <label for="Gender">Gender: </label><br><br>
+<form action="/action_page.php">
+  <label for="male">Male</label>
+  <input type="checkbox" name="gender" id="male" value="male"><br>
+  <label for="female">Female</label>
+  <input type="checkbox" name="gender" id="female" value="female"><br><br>
+</form>
+
+     <br>
+     <label for="The State">The State: </label><br><br>
+<form action="/action_page.php">
+  <label for="Student">Student</label>
+  <input type="radio" name="the state" id="Student" value="Student"><br>
+  <label for="Graduate">Graduate</label>
+  <input type="radio" name="the state" id="graduate" value="graduate"><br><br>
+</form>
+
+        <label for="Are You">Are You</label>
+    <select id="Are You" name="Are You">
+    <option value="Have project idea">Have project idea</option>
+      <option value="Searching for project idea">Searching for project idea</option>
+      <option value="Searching for Job">Searching for Job</option>
+    </select>
+
+<input type="submit" value="Submit">
+    <input type="reset"  value="Reset">
+  </form>
+</div>
+      
+   <p><strong>To Start Entrepreneur test click START</strong></p>     
+        
+        
+        
+        
+        
+ <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>       
     </body>
 </html>
