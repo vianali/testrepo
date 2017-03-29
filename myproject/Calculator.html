@@ -22,62 +22,73 @@
         <br>
         <p>You can used this online calculator</p>
         <div class="box">
-<div class="display"><input type="text" readonly size="18" id="d"></div>
+<div class="display">
+    <input type="text" readonly size="18" id="d"></div>
 <div class="keys">
-    <p><input type="button" class="button gray" 
-    value="mrc" onclick='c("Created....................")'>
-    <input type="button" class="button gray" 
-    value="m-" onclick='c("...............by............")'>
-    <input type="button" class="button gray" value="
-    m+" onclick='c(".....................Anoop")'>
-    <input type="button" class="button pink" 
-    value="/" onclick='v("/")'></p>
-    <p><input type="button" class="button black" 
-    value="7" onclick='v("7")'><input type="button" 
-    class="button black" value="8" onclick='v("8")'>
-    <input type="button" class="button black" value="9" 
-    onclick='v("9")'><input type="button" 
-    class="button pink" value="*" onclick='v("*")'></p>
-    <p><input type="button" class="button black" 
-    value="4" onclick='v("4")'><input type="button" 
-    class="button black" value="5" onclick='v("5")'>
-    <input type="button" class="button black" value="6" 
-    onclick='v("6")'><input type="button" 
-    class="button pink" value="-" onclick='v("-")'></p>
-    <p><input type="button" class="button black" 
-    value="1" onclick='v("1")'><input type="button" 
-    class="button black" value="2" onclick='v("2")'>
-    <input type="button" class="button black" value="3" 
-    onclick='v("3")'><input type="button" 
-    class="button pink" value="+" onclick='v("+")'></p>
-    <p><input type="button" class="button black" 
-    value="0" onclick='v("0")'><input type="button" 
-    class="button black" value="." onclick='v(".")'>
-    <input type="button" class="button black" value="C" 
-    onclick='c("")'><input type="button" 
-    class="button orange" value="=" onclick='e()'></p>
+    <p><input type="button" class="button gray" value="mrc" onclick='c("Created....................")'>
+    
+    <input type="button" class="button gray" value="m-" onclick='c("...............by............")'>
+    
+    <input type="button" class="button gray" value="m+" onclick='c(".....................Anoop")'>
+    
+    <input type="button" class="button pink" value="/" onclick='v("/")'></p><p>
+    
+    <input type="button" class="button black" value="7" onclick='v("7")'>
+    
+    <input type="button" class="button black" value="8" onclick='v("8")'>
+    
+    <input type="button" class="button black" value="9" onclick='v("9")'>
+    
+    <input type="button" class="button pink" value="*" onclick='v("*")'></p><p>
+        
+    <input type="button" class="button black" value="4" onclick='v("4")'>
+    
+    <input type="button" class="button black" value="5" onclick='v("5")'>
+    
+    <input type="button" class="button black" value="6" onclick='v("6")'>
+    
+    <input type="button" class="button pink" value="-" onclick='v("-")'></p><p>
+        
+    <input type="button" class="button black" value="1" onclick='v("1")'>
+    
+    <input type="button" class="button black" value="2" onclick='v("2")'>
+    
+    <input type="button" class="button black" value="3" onclick='v("3")'>
+    
+    <input type="button" class="button pink" value="+" onclick='v("+")'></p><p>
+        
+    <input type="button" class="button black" value="0" onclick='v("0")'>
+    
+    <input type="button" class="button black" value="." onclick='v(".")'>
+    
+    <input type="button" class="button black" value="C" onclick='c("")'>
+    
+    <input type="button" class="button orange" value="=" onclick='e()'></p>
 </div>
 </div>
         
-     <script>
-         function c(val)
-{
+
+<script>
+
+function c(val){
 document.getElementById("d").value=val;
 }
-function v(val)
-{
+function v(val){
 document.getElementById("d").value+=val;
 }
-function e() 
-{ 
-try 
-{ 
-  c(eval(document.getElementById("d").value));
-} 
-catch(e) 
-{
-  c('Error') 
-} 
+function e() { 
+    var equat;
+    var pos;
+try {  
+equat= document.getElementById("d").value;
+pos = equat.indexOf("0");
+if ( pos===0)
+                    equat = equat.slice(1);
+document.getElementById("d").value=equat;
+
+c(eval(document.getElementById("d").value));} 
+catch(e) {  
+c('Error') }
 }
 </script>   
         
