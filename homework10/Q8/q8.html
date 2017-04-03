@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+            <script src="https://test-vianali.c9users.io"></script>
+   
+ <input type='text' id='fname' class='chatinput' onkeyup="annotate()">       
+  <br>
+  
+<div id='printchatbox'></div><br>
+<div id='printchatbox1'></div><br>
+<div id='printchatbox2'></div><br>
+<div id='printchatbox3'></div><br>
+
+
+<script>
+function annotate(){
+ var typed= document.getElementById("fname").value;
+  document.getElementById("printchatbox").innerHTML= typed;
+  document.getElementById("printchatbox1").innerHTML= typed;
+  document.getElementById("printchatbox2").innerHTML= typed;
+  document.getElementById("printchatbox3").innerHTML= typed;
+}
+</script>
+
+    </body>
+</html>
