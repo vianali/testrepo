@@ -1,3 +1,6 @@
+# 1. Write the following programs:
+# - Write a JavaScript program that will loop through array a, and capitalizes every third word.
+
 a = ["john", "mike", "susan", "matt", "joe", "larry", "ken", "samantha", "jenny", "Sara", "henry"]
 
 def capitalize_words(string)
