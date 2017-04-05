@@ -13,7 +13,9 @@ for( i=0 ;i<c.length; i++){
 c[i]=b[i]*(2/3)+(1/2);
 console.log(c[i]);
 }
+
 console.log('______________');
+
 for( i=0 ;i<c.length; i++){
 var sum=0;
 var j;
@@ -21,5 +23,4 @@ for( j=0 ;j<c.length; j++)
 sum=sum+b[i]*c[j];
 console.log(sum);
 }
-
 }
