@@ -8,7 +8,7 @@ from Ruby patterns I choose the (Decorator Pattern).
 this pattern solve the problem of classes,where it allows to add behavior
 to objects without affecting other objects of the same class. The decorator 
 pattern is a useful alternative to creating sub-classes.
-So in this case i biuld my code about a shirt stor.
+So in this case i biuld my code about a shirts store.
 =end
 
 #the solution with Decorator
